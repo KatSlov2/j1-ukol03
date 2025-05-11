@@ -34,8 +34,8 @@ public class HlavniProgram {
 
         mujPocitac.zapniSe();
 
-
-
+        System.out.println(mujPocitac.toString());
+        mujPocitac.vypniSe();
 
 
 //        System.out.println("Program spuštěn.");
