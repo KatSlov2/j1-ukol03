@@ -67,13 +67,20 @@ public class Pocitac {
 //        while (vypniSe()!= ; {return;}
     }
 
-    public void vytvorSouborOVelikosti (long velikosti){
-        if ((setvyuziteMisto + velikosti) > vyuziteMisto){
+    public void vytvorSouborOVelikosti (long velikost){
+        if ((setvyuziteMisto + velikost) > vyuziteMisto){
             System.err.println("Nevejde se!");
             return;
         } else {
-            new vyuziteMisto = vyuziteMisto + velikosti;
+            new vyuziteMisto = vyuziteMisto + velikost;
         }
-
+    }
+    public void vymazSouboryOVelikosti (long velikost) {
+        if ((setvyuziteMisto - velikost) > 0){
+            System.err.println("Error! není co mazat");
+            return;
+        } else {
+            new vyuziteMisto = vyuziteMisto - velikosti;
+        }
     }
 }
