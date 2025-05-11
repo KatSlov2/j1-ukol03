@@ -40,7 +40,7 @@ public class HlavniProgram {
         mujPocitac.zapniSe();
 
 
-
+//
 //        System.out.println("Program spuštěn.");
 
     }
