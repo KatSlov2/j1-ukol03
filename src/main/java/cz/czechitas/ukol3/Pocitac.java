@@ -36,17 +36,12 @@ public class Pocitac {
 
 //    public String toString() {return "Pevny disk: " + pevnyDisk; }
 //-----------------------------------------------------------------------------
-    public void jeZapnuty (){
-        jeZapnuty = true;
+    public boolean jeZapnuty (){
+        return jeZapnuty;
     }
 
     public void zapniSe () {
-    if (jeZapnuty.equals(true)) {
-        System.err.println("Error!Pocitac je jiz zapnuty");
-    } else {
-        System.out.println("Pocitac se zapnul!");
-    }
-    if (cpu != null) {
+       if (cpu != null) {
         System.err.println("Error: chybi cpu!");
         return;
     }
@@ -58,6 +53,12 @@ public class Pocitac {
         System.err.println("Error: chybi pevny disk!");
         return;
     }
+    if (jeZapnuty.equals(true)) {
+            System.err.println("Error!Pocitac je jiz zapnuty");
+        } else {
+            System.out.println("Pocitac se zapnul!");
+            jeZapnuty = true;
+        }
     }
 
     public void vypniSe(){
