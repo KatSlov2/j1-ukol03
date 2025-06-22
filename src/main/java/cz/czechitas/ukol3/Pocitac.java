@@ -69,7 +69,7 @@ public class Pocitac {
     }
 
     public void vytvorSouborOVelikosti (long velikost){
-        if ((setvyuziteMisto + velikost) > vyuziteMisto){
+        if ((setVyuziteMisto + velikost) > vyuziteMisto){
             System.err.println("Nevejde se!");
             return;
         } else {
@@ -77,7 +77,7 @@ public class Pocitac {
         }
     }
     public void vymazSouboryOVelikosti (long velikost) {
-        if ((setvyuziteMisto - velikost) > 0){
+        if ((setVyuziteMisto - velikost) > 0){
             System.err.println("Error! není co mazat");
             return;
         } else {

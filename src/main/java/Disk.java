@@ -16,9 +16,14 @@ public class Disk {
 
     public Long getVyuziteMisto() {
         return vyuziteMisto;
+
     }
 
     public void setVyuziteMisto(Long vyuziteMisto) {
+        if (vyuziteMisto > kapacita) {
+            System.err.println("Nevejde se!");
+            return;
+        }
         this.vyuziteMisto = vyuziteMisto;
     }
 
