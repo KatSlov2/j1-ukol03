@@ -70,7 +70,7 @@ public class Pocitac {
 }
 
 public void vytvorSouborOVelikosti(long velikost){
-   PevnyDisk soubor = new PevnyDisk;
+   PevnyDisk soubor = new PevnyDisk ();
    soubor = vyuziteMisto + velikost;
    return vytvorSouborOVelikosti();
 
