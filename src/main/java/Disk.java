@@ -27,5 +27,4 @@ public class Disk {
         this.vyuziteMisto = vyuziteMisto;
     }
 
-//    public String toString() { return "vyuzite misto: " + vyuziteMisto + " GB"; }
 }
