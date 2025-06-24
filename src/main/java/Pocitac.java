@@ -36,24 +36,24 @@ public class Pocitac {
 
     //    public String toString() {return "Pevny disk: " + pevnyDisk; }
 //-----------------------------------------------------------------------------
-    public boolean jeZapnuty (){
+    public boolean jeZapnuty(){
         return jeZapnuty;
     }
 
-    public void zapniSe () {
-        if (cpu != null) {
+    public void zapniSe() {
+        if(cpu != null) {
             System.err.println("Error: chybi cpu!");
             return;
         }
-        if (ram != null) {
+        if(ram != null) {
             System.err.println("Error: chybi ram!");
             return;
         }
-        if (pevnyDisk != null) {
+        if(pevnyDisk != null) {
             System.err.println("Error: chybi pevny disk!");
             return;
         }
-        if (jeZapnuty.equals(true)) {
+        if(jeZapnuty.equals(true)) {
             System.err.println("Error!Pocitac je jiz zapnuty");
         } else {
             System.out.println("Pocitac se zapnul!");
@@ -62,19 +62,19 @@ public class Pocitac {
     }
 
     public void vypniSe(){
-        if (jeZapnuty.equals(false)){
+        if(jeZapnuty.equals(false)){
             System.out.println("Pocitac se vypnul!");
         }
         return;
     }
 }
 
-public void vytvorSouborOVelikosti (long velikost){
-
-
+public void vytvorSouborOVelikosti(long velikost){
+   PevnyDisk soubor = new PevnyDisk;
+    soubor.set(vyuziteMisto);
 
 }
-public void vymazSouboryOVelikosti (long velikost) {
+public void vymazSouboryOVelikosti(long velikost) {
 
     return vymazSouboryOVelikosti();
 

@@ -20,8 +20,12 @@ public class Disk {
     }
 
     public void setVyuziteMisto(Long vyuziteMisto) {
-        if (vyuziteMisto > kapacita) {
+        if(vyuziteMisto > kapacita) {
             System.err.println("Nevejde se!");
+            return;
+        }
+        if(kapacita == 0) {
+            System.err.println("Není místo!");
             return;
         }
         this.vyuziteMisto = vyuziteMisto;
