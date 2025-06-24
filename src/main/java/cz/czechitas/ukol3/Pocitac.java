@@ -64,20 +64,20 @@ public class Pocitac {
     public void vypniSe(){
         if(jeZapnuty.equals(false)){
             System.out.println("Pocitac se vypnul!");
+            return;
         }
-        return;
+        jeZapnuty = false;
+    }
+
+    public void vytvorSouborOVelikosti(long velikost){
+        long noveVyuziteMisto = pevnyDisk.getVyuziteMisto() + velikost;
+        pevnyDisk.setVyuziteMisto(noveVyuziteMisto);
+    }
+    public void vymazSouboryOVelikosti(long velikost) {
+        long noveVyuziteMisto = pevnyDisk.getVyuziteMisto() - velikost;
+        pevnyDisk.setVyuziteMisto(noveVyuziteMisto);
     }
 }
 
-public void vytvorSouborOVelikosti(long velikost){
-   PevnyDisk soubor = new PevnyDisk ();
-   soubor = vyuziteMisto + velikost;
-   return vytvorSouborOVelikosti();
 
-}
-public void vymazSouboryOVelikosti(long velikost) {
-
-    return vymazSouboryOVelikosti();
-
-}
 

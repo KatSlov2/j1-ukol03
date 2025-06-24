@@ -24,7 +24,7 @@ public class Disk {
             System.err.println("Nevejde se!");
             return;
         }
-        if(kapacita == 0) {
+        if(vyuziteMisto < 0) {
             System.err.println("Není místo!");
             return;
         }
